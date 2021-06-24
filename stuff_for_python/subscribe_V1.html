@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Ledugre</title>
+  <!-- bootstrap link start -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- bootstrap link end -->
+
+  </style>
+</head>
+
+
+<!--
+
+http://alexhaussmann.com/adhaussmann/a_final/add_user_dev.php?uname=premnow_now&hashword=prem_password&email=alex.haussmann%40gmail.com
+
+
+
+http://alexhaussmann.com/adhaussmann/a_final/add_ledger_dev.php?uname=premnow_now&hashword=prem_password&Ledgure=privet&password=post&email=alex.haussmann%40gmail.com
+
+
+
+
+
+http://alexhaussmann.com/adhaussmann/a_final/add_key_dev.php?uname=premnow_now_privet&password=post&email=alex.haussmann%40gmail.com
+
+
+
+http://alexhaussmann.com/adhaussmann/a_final/rm.php?k=e99c9713a1d13a97329174a55da3f9629638487d96075c89c221f3af2ed8e09c&n=d6a5e4e19f0abb5a8d3739d8ac5137f5ec8eea79e624da8d6941406970341abd
+
+
+
+53ee068168172c244c583b0b0012886d3e2b1983db29672be23652606e00f1be
+
+
+
+http://alexhaussmann.com/adhaussmann/a_final/add_post_dev.php?uname=your&hashword=use&tital=premiumpost&text=&body=&photo=&iframe=&catagoy=prem&catagoy_2=P+premnow_now_privet
+
+
+
+
+b7282eaf3be421937381f05093499d534e6d5393416f3b0d43925a76f1ab8390
+
+
+http://alexhaussmann.com/adhaussmann/a_final/get_post_dev.php?key=b7282eaf3be421937381f05093499d534e6d5393416f3b0d43925a76f1ab8390&type=all&usekkey=53ee068168172c244c583b0b0012886d3e2b1983db29672be23652606e00f1b&filler=
+
+
+premnow_now_privet
+
+
+
+
+
+
+
+-->
+
+
+
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/forge/0.8.2/forge.all.min.js"></script>
+
+    <script type="text/Javascript">
+
+
+        var mysetion="(!S???!???S!)";
+
+        function nowgo(a,b){
+          alert(a);
+          a=a.split("(???)");
+          val=a[1];
+          alert(val);
+
+
+          post_responce("http://alexhaussmann.com/adhaussmann/a_final/get_post_dev.php?key=1f239d2a1f6ba3cfea994767c40827df91b313fe07de50dd2bd3b970527ca739&type=all&usekkey="+val+"&filler=",finpost,"hashText");
+
+
+
+        }
+
+        function finpost(a,b){
+          alert(a);
+          document.getElementById("hashText").innerHTML = a;
+        }
+
+        function showitbaby(a,b){
+          alert(a);
+
+        }
+
+        function post_responce(path,func,varible){
+
+              //console.log(path);
+              fetch(path).then(
+                  ( response) => {
+                      return response.text();
+                  })
+                  .then((html) => {
+                      func(html.trim(),varible)
+                  });
+        }
+
+
+        function emailme(path,func,varible){
+
+              //console.log(path);
+
+              var plainText = document.getElementById('plainText').value;
+          post_responce("http://alexhaussmann.com/adhaussmann/a_final/add_key_dev.php?uname=my_go&password=now&email="+plainText,nothing,"hashText");
+
+          alert("http://alexhaussmann.com/adhaussmann/a_final/add_key_dev.php?uname=my_go&password=now&email="+plainText);
+
+        }
+
+        function nothing(A,B){
+          alert(A);
+          alert("emailed");
+        }
+
+
+        function generateHash()
+        {
+
+
+          var plainText = document.getElementById('plainText').value;
+          post_responce("http://alexhaussmann.com/adhaussmann/a_final/change_post.php?uname=&hashword=&change_text="+plainText+"&post="+mysetion,showitbaby,"hashText");
+
+                    
+        }
+
+
+        function showpost()
+        {
+
+
+          post_responce("http://alexhaussmann.com/adhaussmann/a_final/get_post_dev.php?key="+mysetion+"&type=all",nowgo,"hashText");
+
+                    
+        }
+
+
+    </script>
+</head>
+<body style="background-color: #24222a;">
+
+
+<label for="uname" class="text-white">
+
+    <h1>enter your token is  2e5bbe336bc6da0ae16a8025a738f20cc348016df0d9246ade3ccf5dfe96c4a8</h1>
+
+</label>
+</br>
+
+  <input id='plainText' type='text' />
+
+<label for="uname" class="text-white">
+
+<div id="hashText">
+
+</div>
+</label>
+  <br><br><button onclick="generateHash()">submit token to </button>
+
+<br><br><button onclick="showpost()">show post</button>
+
+<br><br><button onclick="emailme()">email</button>
+
+
+
+
+
+<label for="uname" class="text-white">
+    <div id="mybox">move now </div>
+</label>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+
+f = open("prem_postkey_1.txt", "r")
+postkeys=f.read()
+postkeys=postkeys.strip("\n")
+postkeys=postkeys.split(" ")
+
+
+#
+
+f = open("postkey_1.txt","r")
+mykey=f.read()
+
+mykey=mykey.split("\n")
+
+
+
+
+myurl="http://alexhaussmann.com/adhaussmann/a_final/get_post_dev.php?key="+mykey+"&type=all&usekkey="+str(value(+"&filler="
+

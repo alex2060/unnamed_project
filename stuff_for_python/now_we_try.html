@@ -1,0 +1,467 @@
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Ledugre</title>
+  <!-- bootstrap link start -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- bootstrap link end -->
+  <style>
+  .themainbutton{
+    min-width: 220px;
+
+  }
+  .box{
+    height: 5vw;
+    width: 5vw;
+    background-color: red;
+    margin-left: 1vw;
+
+  }
+
+  .clearbox{
+    height: 5vw;
+    width: 5vw;
+    background-color: blue;
+    margin-left: 1vw;
+
+  }
+  .row{
+    margin-top: 1vw;
+
+  }
+
+
+  .words{
+    margin-top: 1vw;
+    color: rgb(255,255,255);
+  }
+
+
+  </style>
+</head>
+
+<body style="background-color: #24222a;">
+
+
+  <div class="container ">
+
+  </br>
+</br
+  </br>
+</br>
+   <div class="words" id = "test"></div> 
+      <div class="row justify-content-center">
+
+        <div class="box" id="top" onClick="reply_click(0)"></div>
+
+
+      </div>
+
+      <!-- this would tipicaly be made by javascript-->
+      <div class="row justify-content-center">
+
+        <div class="box" id="0_0"></div>
+        <div class="box" id="0_1"></div>
+        <div class="box" id="0_2"></div>
+        <div class="box" id="0_3" onClick="reply_click(0)"></div>
+        <div class="box" id="0_4" onClick="reply_click(0)"></div>
+        <div class="box" id="0_5"></div>
+        <div class="box" id="0_6"></div>
+        <div class="box" id="0_7"></div>
+
+      </div>
+
+      <div class="row justify-content-center">
+
+        <div class="box" id="1_0"></div>
+        <div class="box" id="1_1"></div>
+        <div class="box" id="1_2" ></div>
+        <div class="box" id="1_3" onClick="reply_click(0)"></div>
+        <div class="box" id="1_4" onClick="reply_click(0)"></div>
+        <div class="box" id="1_5"></div>
+        <div class="box" id="1_6"></div>
+        <div class="box" id="1_7"></div>
+
+
+
+      </div>
+
+            <div class="row justify-content-center">
+
+        <div class="box" id="2_0" onClick="reply_click(1)"></div>
+        <div class="box" id="2_1"></div>
+        <div class="box" id="2_2"></div>
+        <div class="box" id="2_3"></div>
+        <div class="box" id="2_4"></div>
+        <div class="box" id="2_5"></div>
+        <div class="box" id="2_6"></div>
+        <div class="box" id="2_7" onClick="reply_click(2)"></div>
+
+      </div>
+
+
+
+            <div class="row justify-content-center">
+
+        <div class="box" id="left" onClick="reply_click(1)"></div>
+        <div class="box" id="3_0"  onClick="reply_click(1)"></div>
+        <div class="box" id="3_1"  onClick="reply_click(1)"></div>  
+        <div class="box" id="3_2"></div>
+        <div class="box" id="3_3"></div>
+        <div class="box" id="3_4"></div>
+        <div class="box" id="3_5"></div>
+        <div class="box" id="3_6"   onClick="reply_click(2)"></div>
+        <div class="box" id="3_7"   onClick="reply_click(2)"></div>
+        <div class="box" id="right" onClick="reply_click(2)"></div>
+      </div>
+
+
+
+            <div class="row justify-content-center">
+
+        <div class="box" id="4_0" onClick="reply_click(1)"></div>
+        <div class="box" id="4_1"></div>
+        <div class="box" id="4_2"></div>
+        <div class="box" id="4_3"></div>
+        <div class="box" id="4_4"></div>
+        <div class="box" id="4_5"></div>
+        <div class="box" id="4_6"></div>
+        <div class="box" id="4_7" onClick="reply_click(2)"></div>
+
+      </div>
+
+
+
+      <div class="row justify-content-center">
+
+
+        <div class="box" id="5_0"></div>
+        <div class="box" id="5_1"></div>
+        <div class="box" id="5_2"></div>
+        <div class="box" id="5_3" onClick="reply_click(2)"></div>
+        <div class="box" id="5_4" onClick="reply_click(2)"></div>
+        <div class="box" id="5_5"></div>
+        <div class="box" id="5_6"></div>
+        <div class="box" id="5_7"></div>
+      </div>
+
+
+      <div class="row justify-content-center">
+
+        <div class="box" id="6_0"></div>
+        <div class="box" id="6_1"></div>
+        <div class="box" id="6_2"></div>
+        <div class="box" id="6_3" onClick="reply_click(2)"></div>
+        <div class="box" id="6_4" onClick="reply_click(2)"></div>
+        <div class="box" id="6_5"></div>
+        <div class="box" id="6_6"></div>
+        <div class="box" id="6_7"></div>
+      </div>
+
+
+      <div class="row justify-content-center">
+        <div class="box" id="bot" onClick="reply_click(3)"></div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="box" id="bot" onClick="gogo_do_it_now()"></div>
+      </div>
+
+
+
+</br>
+
+</br>
+</br>
+</br>
+
+
+
+
+<label for="uname" class="text-white">
+
+    <div  id="myurl" ></div>
+</label>
+
+
+<div id="qrcode"></div>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<script>
+
+
+
+var my_x=0;
+var my_y=0;
+
+
+
+
+
+
+var myvar= "(!0???!???0!)";
+//(!0???!???0!)
+var get_setion="";
+
+var mysetion ="";
+
+
+var arego_url="";
+
+
+function post_responce(path,func,varible){
+
+  console.log(path);
+  fetch(path).then(
+      ( response) => {
+          return response.text();
+      })
+      .then((html) => {
+          func(html.trim(),varible)
+      });
+
+
+
+}
+
+function set_mtsetion(A,B){
+  mysetion=A;
+  //alert(A);
+  ourgourl="http://alexhaussmann.com/adhaussmann/a_final/make_newpage.php?usertemplate_name=!!!@@!!!&var1="+mysetion+","+get_setion;
+
+  document.getElementById("myurl").innerHTML=ourgourl;
+
+  if (mysetion!="") {
+    if (get_setion!="") {
+      var qrc = new QRCode(document.getElementById("qrcode"), ourgourl );
+    };
+  };
+
+
+
+}
+function set_yoursetion(A,B){
+  get_setion=A;
+  //alert(A);
+
+
+  ourgourl="http://alexhaussmann.com/adhaussmann/a_final/make_newpage.php?usertemplate_name=!!!@@!!!&var1="+mysetion+","+get_setion;
+
+  document.getElementById("myurl").innerHTML=ourgourl;
+  
+
+  if (mysetion!="") {
+    if (get_setion!="") {
+      var qrc = new QRCode(document.getElementById("qrcode"), ourgourl );
+    };
+  };
+    
+
+}
+
+function loadingnow(){
+
+
+val=myvar.split(",")
+
+get_setion=val[0];
+mysetion=val[1];
+
+
+  ourgourl="http://alexhaussmann.com/adhaussmann/a_final/make_newpage.php?usertemplate_name=MyUserForTest14904614452212042501_game8&var1="+mysetion+","+get_setion;
+
+  document.getElementById("myurl").innerHTML=ourgourl;
+
+if (myvar=="") {
+
+
+    post_responce("http://alexhaussmann.com/adhaussmann/a_final/add_post_dev.php?uname=&hashword=&tital=setion&text=mytext&body=&photo=&iframe=&catagoy=&catagoy_2=",set_mtsetion,"hashText");
+
+
+
+};
+
+
+
+if (myvar=="") {
+
+
+    post_responce("http://alexhaussmann.com/adhaussmann/a_final/add_post_dev.php?uname=&hashword=&tital=setion&text=mytext&body=&photo=&iframe=&catagoy=&catagoy_2=",set_yoursetion,"hashText");
+
+
+
+};
+
+
+gogo_do_it_now();
+
+
+
+}
+
+
+function nowthing(A,B){
+  
+  //alert(A);
+}
+
+var change_loc="";
+
+function nothing(A,B){
+
+  //alert(B);  
+  
+
+
+  add_things=A.split("(???)");
+  //alert(add_things[1]);
+  document.getElementById(add_things[1]).style.backgroundColor = "green";
+  change_loc=A;
+}
+
+
+
+
+
+function reply_click(clicked_id)
+{
+
+  var value = my_x.toString()+"_"+my_y.toString();
+    document.getElementById(value).style.backgroundColor = "red";
+
+    for (let i = 0; i < 10; i++) {
+     
+     for (let p = 0; p < 10; p++) {
+      
+            value = i.toString()+"_"+p.toString();
+
+            try {
+              document.getElementById(value).style.backgroundColor = "red";
+            } catch (error) {
+              console.error(error);
+              // expected output: ReferenceError: nonExistentFunction is not defined
+              // Note - error messages will vary depending on browser
+            }
+
+      }
+    }
+
+    if (clicked_id==0) {
+
+      if (my_x!=0) {
+        my_x=my_x-1;
+      };
+
+    };
+
+    if (clicked_id==1) {
+
+      if (my_y!=0) {
+        my_y=my_y-1;
+      };
+      
+    };
+
+    if (clicked_id==2) {
+
+      
+      if (my_y!=7) {
+        my_y=my_y+1;
+      };
+
+    };
+
+
+    if (clicked_id==3) {
+
+      if (my_x!=6) {
+        my_x=my_x+1;
+      };
+
+      
+    };
+    var value = my_x.toString()+"_"+my_y.toString()
+    document.getElementById(value).style.backgroundColor = "blue";
+
+    post_responce("http://alexhaussmann.com/adhaussmann/a_final/change_post.php?uname=&hashword=&change_text="+value+"&post="+mysetion,nowthing,"hashText");
+  //  alert(value);
+
+//alert(mysetion);
+
+
+    post_responce("http://alexhaussmann.com/adhaussmann/a_final/get_post_dev.php?key="+get_setion+"&type=all",nothing,get_setion);
+    
+
+    
+
+
+}
+//29105f222029ab1d8d92637ceb077030308d09a972125afdd6a32088b2aa6b6b
+
+
+
+function gogo_do_it_now(){
+
+//alert("now go");
+
+
+
+
+}
+
+
+
+  window.addEventListener("load", function(){
+    var qrc = new QRCode(document.getElementById("qrcode2"), "http://alexhaussmann.com/adhaussmann/a_final/make_newpage.php?usertemplate_name=MyUserForTest14904614452212042501_game5&var0=&setion=ee46484825b87151f9b54dc8dd3ebdb73ef5d222b241afa93c0acc48bf2efe9e&setion2=bab6e6a03c7bc9e574fa5e4da3ee3e59db46339a81da9ff0fa2d3bae864c08a6" );
+
+  }
+  );
+
+    window.onload = loadingnow();
+
+
+
+
+
+
+//(!0???!???0!)
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

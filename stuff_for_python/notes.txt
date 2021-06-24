@@ -1,0 +1,200 @@
+
+
+
+
+#add user
+#http://alexhaussmann.com/adhaussmann/a_final/add_user_dev.php?uname=gogogo22&hashword=wegonow2&email=alex.haussmann%40gmail.com
+
+
+
+#add_ledure
+http://alexhaussmann.com/adhaussmann/a_final/add_ledger_dev.php?uname=myuser&hashword=password&Ledgure=ledding&password=leddingpassword&email=alex.haussmann%40gmail.com
+
+
+
+
+http://alexhaussmann.com/adhaussmann/a_final/add_ledger_dev.php?uname=my&hashword=user&Ledgure=got&password=got&email=alex.haussmann%40gmail.com
+
+
+
+
+
+#add key
+http://alexhaussmann.com/adhaussmann/a_final/add_key_dev.php?uname=my_got&password=got&email=alex.haussmann%40gmail.com
+
+
+#check key
+
+
+cash key 
+
+http://alexhaussmann.com/adhaussmann/a_final/rm.php?k=8ccde6fe1f3bad57d541c8292bb1e0fa8c548465debd55b4d4cd27c7ccb1e387&n=92cf108b787f41ebab012632d2f311baaa03b55e7506f7a3086d063089ce23e2
+
+
+
+
+
+
+
+
+
+#traid key
+
+
+
+#add key
+http://alexhaussmann.com/adhaussmann/a_final/add_key_dev.php?uname=my_go&password=now&email=alex.haussmann%40gmail.com
+
+
+
+#add key
+http://alexhaussmann.com/adhaussmann/a_final/add_key_dev.php?uname=my_go&password=now&email=alex.haussmann%40gmail.com
+
+
+
+http://alexhaussmann.com/adhaussmann/a_final/traid.php?traid_id=&traid_hashes=8e26b69ce8aec526f2188a8186f2f544f381692d1d1f11b7875fba9819c1a43c,aaf1e23edd7484d5f167017a951809b569374cd95db65c6e083808b670a29263&traid_items=my_go&traid_reqests=my_itstime&traid_desired_hashes=709c83e1b70f26ac155c8eb7063e31ceafeef93fabac2e5291be13cd53b51caf,my_got
+
+
+
+
+
+
+
+
+
+http://alexhaussmann.com/adhaussmann/a_final/traid.php?traid_id=175549193175dc135bf8374c47e81fc5f86c37229ca256fd996875613c222c1c&traid_hashes=7e4d981af7b43a492604c5478ce0e4c79698367de7c08c6f083a80bbcbab94e4,e3a1e7f6357be374173fc0f71fbc08985c946311693c0e4b46c94b1a015f7640&traid_items=11
+
+
+
+
+
+#name 1
+
+7e4d981af7b43a492604c5478ce0e4c79698367de7c08c6f083a80bbcbab94e4
+
+#name 2
+
+
+
+
+
+SELECT * FROM `a_final_traid_table` WHERE `traid_id` LIKE '175549193175dc135bf8374c47e81fc5f86c37229ca256fd996875613c222c1c' 
+
+SELECT * FROM 'a_final_traid_table' WHERE `traid_id` LIKE '175549193175dc135bf8374c47e81fc5f86c37229ca256fd996875613c222c1c'
+
+
+SELECT * FROM `a_final_Ledgur_keys` WHERE `entery_name` LIKE '709c83e1b70f26ac155c8eb7063e31ceafeef93fabac2e5291be13cd53b51caf' AND `ledgername` LIKE 'my_go' AND `hash` LIKE 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' AND `solution` LIKE 'key' 
+
+
+
+
+
+
+
+
+
+#add post
+http://alexhaussmann.com/adhaussmann/a_final/add_post.php?uname=your&hashword=use&tital=now&text=&body=&photo=&iframe=&catagoy=&catagoy_2=
+http://alexhaussmann.com/adhaussmann/a_final/add_post_dev.php?uname=your&hashword=use&tital=now&text=mytext&body=&photo=&iframe=&catagoy=&catagoy_2=
+
+
+
+
+
+#add_setion
+http://alexhaussmann.com/adhaussmann/a_final/add_post_dev.php?uname=&hashword=&tital=setion&text=mytext&body=&photo=&iframe=&catagoy=&catagoy_2=
+
+
+
+
+
+
+#change post
+
+#change setion
+http://alexhaussmann.com/adhaussmann/a_final/change_post.php?uname=&hashword=&change_text=new&post=a80ee57076653a19c316cb993e0e454a15c24f6f6e355239cc5d86f19e95d0f4
+
+
+#change post
+http://alexhaussmann.com/adhaussmann/a_final/change_post.php?uname=your&hashword=use&change_text=new&post=8d510ee5aec33307763001bb587e4b6924288b5080cf0f8dd62b193ad6a03d01
+
+
+
+
+
+
+
+
+
+#getpost already have
+
+http://alexhaussmann.com/adhaussmann/a_final/get_post_dev.php?key=35b39f540bd6490e843e8df126720276672520f291dd51373ddf858f5f21044b&type=all
+
+
+
+
+
+#make premium post
+#http://alexhaussmann.com/adhaussmann/a_final/add_post_dev.php?uname=your&hashword=use&tital=premiumpost&text=&body=&photo=&iframe=&catagoy=prem&catagoy_2=P+my_go
+
+
+
+
+
+#get private post with key
+#ordentary
+http://alexhaussmann.com/adhaussmann/a_final/get_post_dev.php?key=1f239d2a1f6ba3cfea994767c40827df91b313fe07de50dd2bd3b970527ca739&type=all
+
+
+#with key
+http://alexhaussmann.com/adhaussmann/a_final/get_post_dev.php?key=1f239d2a1f6ba3cfea994767c40827df91b313fe07de50dd2bd3b970527ca739&type=all&usekkey=2e5bbe336bc6da0ae16a8025a738f20cc348016df0d9246ade3ccf5dfe96c4a8&filler=
+
+
+
+
+
+
+
+
+
+#game
+
+
+
+#premium post
+
+
+
+#socal midea page
+
+
+#poster
+
+
+
+#traid python url
+
+
+
+#inventory
+
+
+#striper
+
+
+
+
+
+
+
+#make python walk though.
+
+
+
+
+
+
+
+
+
+

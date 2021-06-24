@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Ledugre</title>
+  <!-- bootstrap link start -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- bootstrap link end -->
+
+  </style>
+</head>
+
+
+<!--
+
+http://alexhaussmann.com/adhaussmann/a_final/add_user_dev.php?uname=tech_now&hashword=myteach_password&email=alex.haussmann%40gmail.com
+
+
+
+http://alexhaussmann.com/adhaussmann/a_final/add_post_dev.php?uname=tech_now&hashword=myteach_password&tital=e629fa6598d732768f7c726b4b621285f9c3b85303900aa912017db7617d8bdb&text=&body=&photo=&iframe=&catagoy=&catagoy_2=
+
+
+
+200a52b09ef9d79b9424ac051f5519d11a230f7b63942b305f50628031da50f8
+
+http://alexhaussmann.com/adhaussmann/a_final/get_post_dev.php?key=200a52b09ef9d79b9424ac051f5519d11a230f7b63942b305f50628031da50f8&type=all
+
+
+
+
+
+-->
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/forge/0.8.2/forge.all.min.js"></script>
+
+    <script type="text/Javascript">
+
+
+                  setion1="";
+
+                  setion2="";
+
+                  webname="";
+                  
+
+                      function post_responce(path,func,varible){
+
+                        console.log(path);
+                        fetch(path).then(
+                            ( response) => {
+                                return response.text();
+                            })
+                            .then((html) => {
+                                func(html.trim(),varible)
+                            });
+
+                    }
+
+
+
+                    function gogo_gad_dgit(A,B){
+
+                        add_things=A.split("(???)");
+
+
+                        //alert(add_things[3]);
+                        //alert(B);
+
+                        if (add_things[3]==B) {
+
+                            
+                            document.getElementById("mybox").innerHTML = "True";
+
+
+
+                        }
+                        else{
+
+                            document.getElementById("mybox").innerHTML = "False";
+                        
+                        }
+
+
+
+                    }
+                    
+
+
+                    function generateHash()
+                    {
+
+                            var plainText = document.getElementById('plainText').value;
+                            var md = forge.md.sha256.create();  
+                            md.start();  
+                            md.update(plainText, "utf8");  
+                            var hashText = md.digest().toHex();  
+                            document.getElementById("hashText").innerHTML = hashText;
+
+                            post_responce("http://alexhaussmann.com/adhaussmann/a_final/get_post_dev.php?key=200a52b09ef9d79b9424ac051f5519d11a230f7b63942b305f50628031da50f8&type=all",gogo_gad_dgit,hashText)
+                            
+                    }
+
+
+    </script>
+</head>
+<body style="background-color: #24222a;">
+
+
+<label for="uname" class="text-white">
+
+    <h1>enter the value of 5 + 10</h1>
+
+</label>
+</br>
+
+	<input id='plainText' type='text' />
+
+<label for="uname" class="text-white">
+	<br><br><strong>Hashed Text (SHA256)  : </strong><span id='hashText'></span>
+</label>
+	<br><br><button onclick="generateHash()">Calculate Hash</button>
+
+<label for="uname" class="text-white">
+    <div id="mybox">move now </div>
+</label>
+
+</body>
+</html>
